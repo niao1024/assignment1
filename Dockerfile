@@ -4,5 +4,5 @@ FROM public.ecr.aws/docker/library/node:23
 WORKDIR /app
 
 # Update the below line, so that it uses the https url to your git repo on github
-RUN git clone https://github.com/niao1024/assignment1.git
+RUN git clone https://github.com/niao1024/assignment1.git .
 ENTRYPOINT ["node", "src/index.js"]
